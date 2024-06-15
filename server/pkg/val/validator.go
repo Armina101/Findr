@@ -1,10 +1,9 @@
-package rval
+package val
 
 import (
 	"context"
 	"errors"
 	"fmt"
-	"regexp"
 	"time"
 
 	"github.com/go-playground/locales/en"
@@ -48,13 +47,6 @@ func FieldValidator(s interface{}) []error {
 		errs = append(errs, err)
 	}
 
-	// fmt.Println("FieldValidatorError: error invalid input validation")
 	return errs
 }
 
-// ValidateMail: Validate user email input using regex expression
-func ValidateMail(email string) bool {
-	regMail := regexp.MustCompile("^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$")
-	ok := regMail.MatchString(email)
-	return ok
-}

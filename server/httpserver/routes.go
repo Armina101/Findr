@@ -1,7 +1,7 @@
 package httpserver
 
 import (
-	"github.com/thebravebyte/linker-app/internals"
+	"github.com/thebravebyte/findr/internals"
 )
 
 

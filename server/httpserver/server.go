@@ -79,7 +79,7 @@ func (srv *Server) ShutdownApp(server *http.Server) {
 
 	// Waiting for the shutdown signal (system calls)
 	<-srv.shutdownSignal
-	srv.logger.Info("Shutting down the Linker App server")
+	srv.logger.Info("Shutting down the Findr App server")
 	if err := server.Shutdown(ctx); err != nil {
 		srv.logger.Error("Server failed to shutdown Properly: ", err)
 		os.Exit(1)
