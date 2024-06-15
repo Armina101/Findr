@@ -5,10 +5,7 @@ import (
 	"time"
 
 	"github.com/golang-jwt/jwt/v5"
-	// "github.com/nhia/nhia-c/pkg/log"
 )
-
-// var lg = log.NewLogger()
 
 type Token struct {
 	jwt.RegisteredClaims
@@ -22,7 +19,7 @@ func Create(id string, accessCode string) (string, error) {
 	// setting the timeout claims for the token to create
 	claims := Token{
 		RegisteredClaims: jwt.RegisteredClaims{
-			Issuer:    "NHIA_DEV",
+			Issuer:    "findr.com",
 			Subject:   "Access Authentication",
 			ExpiresAt: jwt.NewNumericDate(time.Now().Add(time.Hour * 24)),
 			IssuedAt:  jwt.NewNumericDate(time.Now()),

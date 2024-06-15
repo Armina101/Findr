@@ -1,4 +1,4 @@
-module github.com/thebravebyte/linker-app
+module github.com/thebravebyte/findr
 
 go 1.22.2
 

@@ -6,7 +6,9 @@ import (
 
 	"go.mongodb.org/mongo-driver/mongo"
 
-	"github.com/thebravebyte/linker-app/internals"
+	"github.com/thebravebyte/findr/internals"
+	"github.com/thebravebyte/findr/pkg/req"
+	"github.com/thebravebyte/findr/pkg/res"
 )
 
 // LinkerApp struct holds the database and logger instances for the LinkerApp service.
@@ -23,20 +25,27 @@ func NewFindr(db *mongo.Client, logger *slog.Logger) internals.FindrAppService {
 	}
 }
 
+func (fr *FindrApp) GetDB() http.HandlerFunc {
+	return func(w http.ResponseWriter, r *http.Request) {
+		res.Writer(w, http.StatusOK, map[string]interface{}{"message": "Welcome to the FindrApp service"})
+	}
+}
+
 // Todo: Endpoints implementation start here
-func (lk *FindrApp) Register() http.HandlerFunc {
+func (fr *FindrApp) Register() http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
-		return
+		var std internals.Students
+		req.ReadAndValidate(w, r, nil)
 	}
 
 }
 
-func (lk *FindrApp) Login() http.HandlerFunc {
+func (fr *FindrApp) Login() http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 }
-func (lk *FindrApp) Logout() http.HandlerFunc {
+func (fr *FindrApp) Logout() http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 		return
 	}
