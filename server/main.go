@@ -39,10 +39,10 @@ func main() {
 	mainServer.Use(mainServer.LoggingAppRequest(logger))
 
 	// import the funtion fro the controller that returns the service interface
-	lk := controller.NewFindr(DBclient, logger)
+	fa := controller.NewFindr(DBclient, logger)
 
 	// Call the handlers from routes which havr the services interface passed as parameters
-	mainServer.AddRoutes(lk)
+	mainServer.AddRoutes(fa)
 
 	//  Todo: Ask fpr the path for these path of the statics files
 	mainServer.StaticFile("/favicon.ico", "./static/favicon.ico")

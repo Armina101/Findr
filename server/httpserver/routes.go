@@ -5,7 +5,7 @@ import (
 )
 
 
-func (srv *Server) AddRoutes(lk internals.FindrAppService) {
+func (srv *Server) AddRoutes(fa internals.FindrAppService) {
 	// srv.mux.HandleFunc("GET /", lk)
 
 }
