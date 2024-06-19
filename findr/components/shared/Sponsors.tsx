@@ -7,8 +7,8 @@ const Sponsors = () => {
         <div className="w-full text-center">
           <h2 className="text-3xl">
             More Than{" "}
-            <span className="text-purple-600 font-bold">
-              10,000 Companies
+            <span className="text-blue-600 font-bold">
+              2,000 Companies
             </span>{" "}
             Trust us
           </h2>

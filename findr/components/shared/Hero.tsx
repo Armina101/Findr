@@ -15,13 +15,13 @@ const Hero = ({ jobs }: HeroProps) => {
         <div className="text-center flex flex-col gap-3">
           <h1 className="text-6xl font-extrabold text-black">
             Land The{" "}
-            <span className="text-purple-600 font-extrabold">
-              Dream Job
+            <span className="text-blue-600 font-extrabold">
+              Dream Placement
             </span>
             , You Deserve
           </h1>
           <span className="font-thin">
-            100,000 jobs listed here! Your dream job is
+            100,000 Placements listed here! Your ideal placement is
             waiting
           </span>
         </div>

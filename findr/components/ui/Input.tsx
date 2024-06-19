@@ -57,7 +57,7 @@ const Input: React.FC<InputProps> = ({
       ring-gray-300
       placeholder:text-gray-400
       focus:ring-2
-      focus:outline-purple-600
+      focus:outline-blue-600
       sm:text-sm
       sm:leading-6
      
@@ -91,7 +91,7 @@ const Input: React.FC<InputProps> = ({
       ring-gray-300
       placeholder:text-gray-400
       focus:ring-2
-      focus:outline-purple-600
+      focus:outline-blue-600
       sm:text-sm
       sm:leading-6
      

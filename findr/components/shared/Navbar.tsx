@@ -24,7 +24,7 @@ const Navbar = () => {
               Workify
             </h1>
 
-            <MdAdsClick className="text-purple-600 text-3xl" />
+            <MdAdsClick className="text-blue-600 text-3xl" />
           </div>
         </Link>
 
@@ -49,7 +49,7 @@ const Navbar = () => {
           </div>
 
           {openMobileMenu && (
-            <ul className="md:hidden bg-purple-600 absolute top-14 right-5 px-4 py-6 text-center text-white rounded-md flex flex-col gap-3 shadow-md">
+            <ul className="md:hidden bg-blue-600 absolute top-14 right-5 px-4 py-6 text-center text-white rounded-md flex flex-col gap-3 shadow-md">
               {navLinks.map((link, index) => (
                 <Link
                   href={link.route}
