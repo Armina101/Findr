@@ -21,7 +21,7 @@ const Jobs = () => {
 
       {filteredJobs.length < 1 ? (
         <div className="w-full text-center">
-          <h1 className="text-2xl">No Jobs Found</h1>
+          <h1 className="text-2xl">No Placemrnt Found</h1>
           <span className="text-sm">Check back later</span>
         </div>
       ) : (

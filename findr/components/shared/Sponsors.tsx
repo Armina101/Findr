@@ -8,7 +8,7 @@ const Sponsors = () => {
           <h2 className="text-3xl">
             More Than{" "}
             <span className="text-blue-600 font-bold">
-              2,000 Companies
+              500 Institutions
             </span>{" "}
             Trust us
           </h2>
@@ -16,32 +16,32 @@ const Sponsors = () => {
 
         <div className="flex justify-between items-center mt-5 flex-wrap gap-10">
           <Image
-            src={"/airbnb.png"}
-            alt="Airbnb logo"
+            src={"/Uniport.png"}
+            alt="Uniport logo"
             width={144}
             height={144}
           />
           <Image
-            src={"/discord.png"}
-            alt="Discord logo"
+            src={"/Unilorin.png"}
+            alt="Unilorin logo"
             width={144}
             height={144}
           />
           <Image
-            src={"/slack.png"}
-            alt="slack logo"
+            src={"/Uniben.png"}
+            alt="Uniben logo"
             width={144}
             height={144}
           />
           <Image
-            src={"/capitalone.png"}
-            alt="CapitalOne logo"
+            src={"/Unilag.png"}
+            alt="Unilag logo"
             width={144}
             height={144}
           />
           <Image
-            src={"/dropbox.png"}
-            alt="DropBox logo"
+            src={"/Uniibadan.png"}
+            alt="Uni Ibadan logo"
             width={144}
             height={144}
           />

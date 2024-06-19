@@ -21,7 +21,7 @@ const Navbar = () => {
         <Link href={"/"}>
           <div className="flex items-center gap-1">
             <h1 className="text-black font-semibold uppercase text-xl">
-              Workify
+              Findr
             </h1>
 
             <MdAdsClick className="text-blue-600 text-3xl" />

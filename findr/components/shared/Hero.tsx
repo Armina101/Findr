@@ -9,19 +9,19 @@ const Hero = ({ jobs }: HeroProps) => {
   return (
     <div
       id="home"
-      className="bg-[url('/hero.png')] h-screen relative w-full bg-cover mt-[-70px]"
+      className="bg-[url('/hero.jpg')] h-screen relative w-full bg-cover mt-[-70px]"
     >
       <div className="flex flex-col h-full items-center justify-center pt-[82px] gap-20 w-[90%] mx-auto max-w-[1450px]">
         <div className="text-center flex flex-col gap-3">
           <h1 className="text-6xl font-extrabold text-black">
-            Land The{" "}
+            Get The{" "}
             <span className="text-blue-600 font-extrabold">
-              Dream Placement
+              Ideal Placement
             </span>
             , You Deserve
           </h1>
           <span className="font-thin">
-            100,000 Placements listed here! Your ideal placement is
+            Placement Opportunities listed here! Your ideal placement is
             waiting
           </span>
         </div>
